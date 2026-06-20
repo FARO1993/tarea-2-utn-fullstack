@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro al evento</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main class="ticket">
+    <header class="ticket__header">
+      <span class="ticket__eyebrow">JavaScript esencial · Módulo 1</span>
+      <h1>Registro al evento</h1>
+    </header>
+
+    <form id="form-registro" class="ticket__form" novalidate>
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Gómez" required>
+      </div>
+
+      <div class="campo">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" placeholder="Ej: 21" required>
+      </div>
+
+      <button type="submit" class="boton">Confirmar inscripción</button>
+    </form>
+
+    <p id="mensaje" class="mensaje" aria-live="polite"></p>
+
+    <div class="ticket__perforacion"></div>
+    <span class="ticket__sello">ADMIT ONE</span>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
