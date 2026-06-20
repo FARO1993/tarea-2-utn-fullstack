@@ -13,7 +13,26 @@ function validarRegistro(event) {
   event.preventDefault();
 
   const nombre = inputNombre.value.trim();
-  const edad = Number(inputEdad.value);
+  const edadTexto = inputEdad.value.trim();
+
+  if (nombre === '' || edadTexto === '') {
+    mensaje.textContent = '⚠️ Por favor completá tu nombre y tu edad antes de continuar.';
+    mensaje.classList.add('negativo');
+    mensaje.classList.remove('positivo');
+    mensaje.classList.add('visible');
+    return;
+  }
+
+  const edad = Number(edadTexto);
+
+  if (isNaN(edad)) {
+    mensaje.textContent = '⚠️ La edad ingresada no es válida.';
+    mensaje.classList.add('negativo');
+    mensaje.classList.remove('positivo');
+    mensaje.classList.add('visible');
+    return;
+  }
+
   const esMayorDeEdad = edad >= EDAD_MINIMA;
 
   if (esMayorDeEdad) {
