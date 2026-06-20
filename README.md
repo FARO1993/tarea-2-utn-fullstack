@@ -28,7 +28,7 @@ Formulario interactivo de inscripción a un evento, desarrollado como entrega de
 git clone https://github.com/FARO1993/tarea-2-utn-fullstack.git
 
 # 2. Ingresar a la carpeta
-cd registro-evento-utn-fullstack
+cd tarea-2-utn-fullstack
 
 # 3. Abrir el archivo en el navegador
 # En Windows:
